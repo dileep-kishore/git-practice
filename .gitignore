@@ -1,1 +1,5 @@
+# Ignore vim tags
 tags
+
+# Ignore raw data folder
+raw_data/
