@@ -3,3 +3,7 @@ tags
 
 # Ignore raw data folder
 raw_data/
+
+# Cache
+__pycache__
+.mypy_cache
