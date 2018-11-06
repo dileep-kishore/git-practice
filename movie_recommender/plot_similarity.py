@@ -75,9 +75,9 @@ class PlotSimilarity:
             movies = random.choices(self.movies, k=nhits)
             raise KeyError(f"{title} is not in the database. Try: {movies}")
         sim_scores = pd.Series(self.similarity[ind])
-        sorted_sim_scores = sim_scores.sort_values(ascending=False).iloc[:nhits]
+        sorted_sim_scores = sim_scores.sort_values(ascending=False).iloc[:nhits + 1]
         recommended_titles = self._metadata['title'].iloc[sorted_sim_scores.index]
-        return list(recommended_titles)
+        return list(recommended_titles[1:])
 
     @property
     def movies(self) -> List[str]:
