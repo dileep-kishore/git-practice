@@ -13,7 +13,7 @@ This repository contains a movie recommender engine written in `Python`.
 * Activate the conda environment - `source activate recommender`
 
 ```sh
-python cli.py --help
+$ python cli.py --help
 Usage: cli.py [OPTIONS] MOVIE
 
   Get great movie recommendations!
