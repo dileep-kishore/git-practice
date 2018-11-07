@@ -4,6 +4,8 @@ A repository with code to help you practice your git. Created for the workshop s
 
 This repository contains a movie recommender engine written in `Python`.
 
+The actual tasks for the workshop can be found [here](https://foundations-in-computational-skills.readthedocs.io/en/latest/content/workshops/07_version_control_with_git/07_version_control_with_git_workshop.html).
+
 
 ## Usage
 
@@ -93,8 +95,6 @@ File:           ~/Documents/boston_university/collaborations/git-practice/movie_
 Type:           type
 ```
 
-
-The actual tasks for the workshop can be found [here](https://foundations-in-computational-skills.readthedocs.io/en/latest/content/workshops/07_version_control_with_git/07_version_control_with_git_workshop.html).
 
 ## Contributors
 
