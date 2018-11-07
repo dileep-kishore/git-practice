@@ -42,3 +42,21 @@ def save(obj: Any, fname: str) -> None:
     """
     with open(fname, 'wb') as fid:
         pickle.dump(obj, fid)
+
+
+def load(fname: str) -> Any:
+    """Load pickled object
+
+    Parameters
+    ----------
+    fname : str
+        The filename for the object to be loaded
+
+    Returns
+    -------
+    Any
+        The pickled object
+    """
+    with open(fname, 'rb') as fid:
+        obj = pickle.load(fid)
+    return obj
