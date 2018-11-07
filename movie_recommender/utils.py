@@ -2,7 +2,8 @@
     This module contains general utilities for this package
 """
 
-from typing import List
+import pickle
+from typing import Any, List
 
 from fuzzywuzzy import process
 
@@ -26,3 +27,18 @@ def search(targets: List[str], query: str, nhits: int = 3) -> List[str]:
         raise ValueError("You cannot request more hits than the number of targets")
     results = process.extract(query, targets, limit=nhits)
     return [r[0] for r in results]
+
+
+def save(obj: Any, fname: str) -> None:
+    """Pickle the object
+
+    Parameters
+    ----------
+    obj : Any
+        The object to be saved
+    fname : str
+        The filename for the object
+        Convention is to have the '.pkl' extension
+    """
+    with open(fname, 'wb') as fid:
+        pickle.dump(obj, fid)
